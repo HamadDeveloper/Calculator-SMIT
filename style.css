@@ -1,6 +1,6 @@
 
 body{
-    background-color: aqua;
+    background-color: rgb(38, 44, 44);
     justify-content: center; 
     align-items: center; 
     height: 100vh; 
@@ -10,15 +10,18 @@ body{
   
   h1 {
     text-align: center; 
+    color: bisque;
   }
   
 
 .calculator {
-    width: 300px;
+  background-color: #a2afad;
+    width: 350px;
     margin: 0 auto;
     padding: 20px;
     border: 2px solid #033c32;
     border-radius: 5px;
+    height: 70%;
   }
   
   input[type="text"] {
@@ -26,12 +29,27 @@ body{
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 5px;
+    text-align: right;
+    font-weight: bold;
+    height: 40px;
+    font-size: x-large;
   }
+  /* }input[type="text"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: right;
+    font-weight: bold;
+  } */
   
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 11px;
+    font-weight: bold;
+    height: 60%;
+    width: 100%;
     
   }
   
@@ -39,5 +57,19 @@ body{
     padding: 10px;
     font-size: 20px;
     border-radius:5px;
+    box-shadow: 10px 10px 20px #a2afad;
+    font-weight: bold;
   }
+
+  .clear-button {
+    background-color: red;
+    font-weight: bold;
+    /* box-shadow:  5px 2px 3px rgb(180, 94, 94) ; */
+  }
+   .black-buttons{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    
+}  
   
